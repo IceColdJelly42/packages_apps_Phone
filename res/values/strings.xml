@@ -1632,4 +1632,7 @@
     <string name="transparent_in_call_widget">Transparent in call screen</string>
     <string name="transparent_in_call_widget_summary">Shows the complete contact picture on incomming calls</string>
 
+    <!-- Device phone nmumber option -->
+    <string name="phone_number_label">My phone number</string>
+    <string name="phone_number_summary">Set the phone number for this device</string>
 </resources>
