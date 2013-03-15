@@ -75,6 +75,11 @@
         android:title="@string/vibrate_call_waiting"
         android:persistent="true"
         android:summary="@string/vibrate_call_waiting_sum"/>
+    <CheckBoxPreference
+        android:key="missed_call_breath"
+        android:title="@string/missed_call_breath"
+        android:summary="@string/missed_call_breath_summary"
+        android:defaultValue="false" /> 
   </PreferenceCategory>
   
   <PreferenceCategory

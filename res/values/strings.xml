@@ -1568,4 +1568,8 @@
         <item>dismiss the call</item>
     </string-array>
 
+    <!-- Breathing missed call -->
+    <string name="missed_call_breath">Breathing Missed Call</string>
+    <string name="missed_call_breath_summary">Will give your missed call notifications a breathing effect on the statusbar.</string> 
+
 </resources>

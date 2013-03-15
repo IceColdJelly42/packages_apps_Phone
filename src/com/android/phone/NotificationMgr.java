@@ -486,6 +486,8 @@ public class NotificationMgr implements CallerInfoAsyncQuery.OnQueryCompleteList
         // When the user clicks this notification, we go to the call log.
         final Intent callLogIntent = PhoneGlobals.createCallLogIntent();
 
+        boolean makeBreath = MessagingPreferenceActivity.getBreathEnabled(context); 
+
         // Never display the missed call notification on non-voice-capable
         // devices, even if the device does somehow manage to get an
         // incoming call.
@@ -532,8 +534,7 @@ public class NotificationMgr implements CallerInfoAsyncQuery.OnQueryCompleteList
         }
 
         Notification.Builder builder = new Notification.Builder(mContext);
-        if (Settings.System.getInt(mContext.getContentResolver(),
-               Settings.System.MISSED_CALL_BREATH, 0) == 1) {
+        if (makeBreath = true) { 
              builder.setSmallIcon(R.drawable.stat_notify_missed_call_breath)
                 .setTicker(mContext.getString(R.string.notification_missedCallTicker, callName))
                 .setWhen(date)

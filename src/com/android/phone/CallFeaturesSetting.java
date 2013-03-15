@@ -203,6 +203,8 @@ public class CallFeaturesSetting extends PreferenceActivity
 
     private static final String FLIP_ACTION_KEY = "flip_action";
 
+    private static final String MISSED_CALL_BREATH = "missed_call_breath";
+
     private Intent mContactListIntent;
 
     /** Event for Async voicemail change call */
@@ -309,6 +311,7 @@ public class CallFeaturesSetting extends PreferenceActivity
     private CheckBoxPreference mVoicemailNotificationVibrate;
     private SipSharedPreferences mSipSharedPreferences;
     private ListPreference mFlipAction;
+    private CheckBoxPreference mMissedCallBreath;
 
     private class VoiceMailProvider {
         public VoiceMailProvider(String name, Intent intent) {
@@ -1613,6 +1616,9 @@ public class CallFeaturesSetting extends PreferenceActivity
             }
         }
 
+        // Breath
+        mMissedCallBreath = (CheckBoxPreference) findPreference(MISSED_CALL_BREATH);
+
         if (mPlayDtmfTone != null) {
             mPlayDtmfTone.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.DTMF_TONE_WHEN_DIALING, 1) != 0);
@@ -2294,5 +2300,10 @@ public class CallFeaturesSetting extends PreferenceActivity
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         activity.startActivity(intent);
         activity.finish();
+    }
+
+    public static boolean getBreathEnabled(Context context) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        return prefs.getBoolean(MessagingPreferenceActivity.MISSED_CALL_BREATH, false);
     }
 }
