@@ -1561,8 +1561,6 @@
     <string name="vibrate_hangup_sum">Vibrate when a call has ended</string>
     <string name="vibrate_call_waiting">Vibrate call waiting</string>
     <string name="vibrate_call_waiting_sum">Vibrate on call waiting</string>
-    <string name="rejected_as_missed">Rejected calls as missed</string>
-    <string name="rejected_as_missed_sum">Mark rejected calls as \'missed\' rather than \'incoming\' in the call log</string>
 
     <!-- Setting title for the flip action setting. -->
     <string name="flip_action_title">Flip action</string>
