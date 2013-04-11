@@ -88,6 +88,14 @@
         android:persistent="true"
         android:entries="@array/ring_delay_entries"
         android:entryValues="@array/ring_delay_values"/>
+    <PreferenceScreen
+        android:key="button_blacklist"
+        android:title="@string/blacklist_title"
+        android:persistent="false">
+        <intent android:action="android.intent.action.MAIN"
+            android:targetPackage="com.android.phone"
+            android:targetClass="com.android.phone.BlacklistSetting" />
+    </PreferenceScreen>
   </PreferenceCategory>
   
   <PreferenceCategory
