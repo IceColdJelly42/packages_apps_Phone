@@ -1557,7 +1557,7 @@
     <string name="advanced_setting">Advanced Settings</string>
     <string name="vibrate_outgoing">Vibrate on answer</string>
     <string name="vibrate_outgoing_sum">Vibrate when an outgoing call is answered</string>
-    <string name="vibrate_60">Vibrate every 60 seconds</string>
+    <string name="vibrate_60">Vibrate every minute</string>
     <string name="vibrate_60_sum">Vibrates at the 60 second mark of every minute during outgoing calls</string>
     <string name="vibrate_hangup">Vibrate on hangup</string>
     <string name="vibrate_hangup_sum">Vibrate when a call has ended</string>
@@ -1601,7 +1601,8 @@
     <string name="blacklist_summary_disabled">Disabled</string>
     <string name="blacklist_summary">Incoming calls from phone numbers in the blacklist will be blocked</string>
     <string name="blacklist_notify">Show notification</string>
-    <string name="blacklist_private_numbers">Block private numbers</string>
+    <string name="blacklist_private_numbers_title">Private numbers</string>
+    <string name="blacklist_private_numbers_summary">Block incoming calls from private numbers</string>
     <string name="blacklist_notification_private_number">Blocked a call from a private number</string>
     <string name="blacklist_regex_title">Use wildcards</string>
     <string name="blacklist_regex_summary">Use . as a wildcard and * for repetition. E.g. 123.* blocks numbers starting with 123 and .*123.* blocks numbers containing 123</string>
