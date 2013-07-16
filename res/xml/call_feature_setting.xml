@@ -106,6 +106,12 @@
         android:summary="@string/transparent_in_call_widget_summary"
         android:persistent="true"
         android:defaultValue="false" />
+    <CheckBoxPreference
+        android:key="bg_incall_screen"
+        android:title="@string/bg_incall"
+        android:persistent="true"
+        android:defaultValue="false"
+        android:summary="@string/bg_incall_summary"/>
     </PreferenceScreen>
   </PreferenceCategory>
   
